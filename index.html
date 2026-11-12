@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes notes du semestre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <h1>Mes notes du semestre</h1>
+
+        <div class="add-notes-container">
+            <p>Matière</p>
+            <input type="text" class="Matiere-input">
+            <p>Note (/20)</p>
+            <input type="number" class="notes-input">
+            <p>Coefficient</p>
+            <input type="number" class="Coiffecient-input" value="1" min="1">
+            <button class="add-button">Ajouter</button>
+            <p class="error-message"></p>
+        </div>
+
+        <div class="print-notes-container">
+            <div class="notes-info">
+                <div class="reussi">
+                    <span>Développement numérique : 17/20 (coef 3)</span>
+                    <button class="supprimer">✕</button>
+                </div>
+                <div class="echoue">
+                    <span>Mathématiques : 8.5/20 (coef 2)</span>
+                    <button class="supprimer">✕</button>
+                </div>
+                <div class="reussi">
+                    <span>Anglais : 14/20 (coef 1)</span>
+                    <button class="supprimer">✕</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <p>Nombre de matières : <strong class="nombre">0</strong></p>
+            <p>Moyenne : <strong class="moyenne">-</strong></p>
+            <p>Mention : <strong class="mention">-</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
